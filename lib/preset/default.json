@@ -52,15 +52,15 @@
   },
 
 
-  "lineBreak" : {
+  "lineBreak" : {                                   换行：
     "value" : "\n",
 
-    "before" : {
-      "AssignmentExpression" : ">=1",
-      "AssignmentOperator": 0,
-      "AssignmentPattern" : 0,
-      "ArrayPatternOpening": 0,
-      "ArrayPatternClosing": 0,
+    "before" : {                                      
+      "AssignmentExpression" : ">=1",                   赋值表达式
+      "AssignmentOperator": 0,                          赋值操作符前
+      "AssignmentPattern" : 0,                          赋值模式：      var [a,b]=[1,2];
+      "ArrayPatternOpening": 0,                         数组模式：   
+      "ArrayPatternClosing": 0,                          
       "ArrayPatternComma": 0,
       "ArrowFunctionExpressionArrow": 0,
       "ArrowFunctionExpressionOpeningBrace": 0,
@@ -248,103 +248,103 @@
     "removeTrailing" : 1,
 
     "before" : {
-      "AssignmentPattern" : 1,
-      "ArrayExpressionOpening" : 0,
-      "ArrayExpressionClosing" : 0,
-      "ArrayExpressionComma" : 0,
-      "ArrayPatternOpening": 1,
-      "ArrayPatternClosing": 0,
-      "ArrayPatternComma": 0,
-      "ArrowFunctionExpressionArrow": 1,
-      "ArrowFunctionExpressionOpeningBrace": 1,
-      "ArrowFunctionExpressionClosingBrace": 0,
-      "ArgumentComma" : 0,
-      "ArgumentList" : 0,
-      "AssignmentOperator" : 1,
-      "BinaryExpression": 0,
-      "BinaryExpressionOperator" : 1,
-      "BlockComment" : 1,
-      "CallExpression" : -1,
-      "CallExpressionOpeningParentheses" : 0,
-      "CallExpressionClosingParentheses" : -1,
-      "CatchParameterList" : 0,
-      "CatchOpeningBrace" : 1,
-      "CatchClosingBrace" : 1,
-      "CatchKeyword" : 1,
-      "CommaOperator" : 0,
-      "ClassOpeningBrace" : 1,
-      "ClassClosingBrace" : 1,
-      "ConditionalExpressionConsequent" : 1,
-      "ConditionalExpressionAlternate" : 1,
-      "DoWhileStatementOpeningBrace" : 1,
-      "DoWhileStatementClosingBrace" : 1,
-      "DoWhileStatementConditional" : 1,
-      "EmptyStatement" : 0,
-      "ExpressionClosingParentheses" : 0,
-      "FinallyKeyword" : -1,
-      "FinallyOpeningBrace" : 1,
-      "FinallyClosingBrace" : 1,
-      "ForInStatement" : 1,
-      "ForInStatementExpressionOpening" : 1,
-      "ForInStatementExpressionClosing" : 0,
-      "ForInStatementOpeningBrace" : 1,
-      "ForInStatementClosingBrace" : 1,
-      "ForOfStatement" : 1,
-      "ForOfStatementExpressionOpening" : 1,
-      "ForOfStatementExpressionClosing" : 0,
-      "ForOfStatementOpeningBrace" : 1,
-      "ForOfStatementClosingBrace" : 1,
-      "ForStatement" : 1,
-      "ForStatementExpressionOpening" : 1,
-      "ForStatementExpressionClosing" : 0,
-      "ForStatementOpeningBrace" : 1,
-      "ForStatementClosingBrace" : 1,
-      "ForStatementSemicolon" : 0,
-      "FunctionDeclarationOpeningBrace" : 1,
-      "FunctionDeclarationClosingBrace" : 1,
-      "FunctionExpressionOpeningBrace" : 1,
-      "FunctionExpressionClosingBrace" : 1,
-      "FunctionGeneratorAsterisk": 0,
-      "FunctionName" : 1,
-      "IIFEClosingParentheses" : 0,
-      "IfStatementConditionalOpening" : 1,
-      "IfStatementConditionalClosing" : 0,
-      "IfStatementOpeningBrace" : 1,
-      "IfStatementClosingBrace" : 1,
-      "ModuleSpecifierClosingBrace": 1,
-      "ElseStatementOpeningBrace" : 1,
-      "ElseStatementClosingBrace" : 1,
-      "ElseIfStatementOpeningBrace" : 1,
-      "ElseIfStatementClosingBrace" : 1,
-      "LineComment" : 1,
-      "LogicalExpressionOperator" : 1,
-      "MemberExpressionOpening": 0,
-      "MemberExpressionClosing": 0,
-      "MemberExpressionPeriod": 0,
-      "ObjectExpressionOpeningBrace": -1,
-      "ObjectExpressionClosingBrace": 0,
-      "ObjectPatternOpeningBrace": 1,
-      "ObjectPatternClosingBrace": 0,
-      "ObjectPatternComma": 0,
-      "Property" : 1,
-      "PropertyValue" : 1,
-      "ParameterComma" : 0,
-      "ParameterList" : 0,
-      "SwitchDiscriminantOpening" : 1,
-      "SwitchDiscriminantClosing" : 0,
-      "SwitchCaseColon": 0,
-      "ThrowKeyword": 1,
-      "TryKeyword": -1,
-      "TryOpeningBrace" : 1,
-      "TryClosingBrace" : 1,
-      "UnaryExpressionOperator": 0,
-      "VariableName" : 1,
-      "VariableValue" : 1,
-      "VariableDeclarationSemiColon" : 0,
-      "WhileStatementConditionalOpening" : 1,
-      "WhileStatementConditionalClosing" : 0,
-      "WhileStatementOpeningBrace" : 1,
-      "WhileStatementClosingBrace" : 1
+      "AssignmentPattern" : 1,        赋值模式前   a_=
+      "ArrayExpressionOpening" : 0,   数组开头前     [_...]
+      "ArrayExpressionClosing" : 0,   数组末尾前      ..._]
+      "ArrayExpressionComma" : 0,     数组逗号前     ..._,
+      "ArrayPatternOpening": 1,       列表模式开头前  _[2*i for i in arr ]
+      "ArrayPatternClosing": 0,       列表模式结尾前   [i for i in arr _]
+      "ArrayPatternComma": 0,         列表模式逗号前   [i, j for i,j in arr]
+      "ArrowFunctionExpressionArrow": 1,       箭头函数表达式        (x)=>x
+      "ArrowFunctionExpressionOpeningBrace": 1, 箭头函数表达式开始大括号前  (x)=>_{}
+      "ArrowFunctionExpressionClosingBrace": 0, 箭头函数表达式闭合大括号前  (x)=>{..._}
+      "ArgumentComma" : 0,              参数逗号前：   call(a,b)
+      "ArgumentList" : 0,               参数列表：    
+      "AssignmentOperator" : 1,         赋值操作符前：   a_=b
+      "BinaryExpression": 0,            2元表达式
+      "BinaryExpressionOperator" : 1,   2元表达式操作符
+      "BlockComment" : 1,               块状注释
+      "CallExpression" : -1,            调用表达式
+      "CallExpressionOpeningParentheses" : 0,    调用表达式开始圆括号前    call_()
+      "CallExpressionClosingParentheses" : -1,   调用表达式结束圆括号前    call()
+      "CatchParameterList" : 0,               catch参数列表
+      "CatchOpeningBrace" : 1,                catch开始大括号
+      "CatchClosingBrace" : 1,                catch结束大括号
+      "CatchKeyword" : 1,                     catch关键字
+      "CommaOperator" : 0,                    逗号表达式
+      "ClassOpeningBrace" : 1,                class开始大括号
+      "ClassClosingBrace" : 1,                class结束大括号
+      "ConditionalExpressionConsequent" : 1,  条件表达式结果------
+      "ConditionalExpressionAlternate" : 1,   条件表达式交替------
+      "DoWhileStatementOpeningBrace" : 1,     do/while语句开始大括号前   do_{
+      "DoWhileStatementClosingBrace" : 1,     do/while语句结束大括号前   do {..._}
+      "DoWhileStatementConditional" : 1,      do/while语句条件前         do {...}_while()
+      "EmptyStatement" : 0,                   空语句前
+      "ExpressionClosingParentheses" : 0,     表达式结束圆括号前：       (...,..._)
+      "FinallyKeyword" : -1,                  关键字finnaly前：
+      "FinallyOpeningBrace" : 1,              finnaly开始大括号前:      finnal_{
+      "FinallyClosingBrace" : 1,              finnaly结束大括号前:      finnal{...._}
+      "ForInStatement" : 1,                   for/in语句前：            _for() x in 
+      "ForInStatementExpressionOpening" : 1,  for/in表达式开头          for_()
+      "ForInStatementExpressionClosing" : 0,  for/in表达式结尾          for(.._)
+      "ForInStatementOpeningBrace" : 1,       for/in开始大括号：        for()_{
+      "ForInStatementClosingBrace" : 1,       for/in结束大括号:         for(){..._}
+      "ForOfStatement" : 1,                   for/of语句前：
+      "ForOfStatementExpressionOpening" : 1,  for/of表达式开头
+      "ForOfStatementExpressionClosing" : 0,  for/of表达式结尾：
+      "ForOfStatementOpeningBrace" : 1,       for/of开始大括号：
+      "ForOfStatementClosingBrace" : 1,       for/of结束大括号：
+      "ForStatement" : 1,                     for语句
+      "ForStatementExpressionOpening" : 1,    for表达式开头
+      "ForStatementExpressionClosing" : 0,    for表达式结束
+      "ForStatementOpeningBrace" : 1,         for开始大括号
+      "ForStatementClosingBrace" : 1,         for结束大括号
+      "ForStatementSemicolon" : 0,            for分号前
+      "FunctionDeclarationOpeningBrace" : 1,  函数声明开始大括号：
+      "FunctionDeclarationClosingBrace" : 1,  函数声明结束大括号
+      "FunctionExpressionOpeningBrace" : 1,   函数表达式开始大括号
+      "FunctionExpressionClosingBrace" : 1,   函数表达式结束大括号
+      "FunctionGeneratorAsterisk": 0,         函数生成器星号
+      "FunctionName" : 1,                     函数名
+      "IIFEClosingParentheses" : 0,           IIFE(立即执行函数)结束圆括号前  (function(){}())
+      "IfStatementConditionalOpening" : 1,    if语句条件开始
+      "IfStatementConditionalClosing" : 0,    if语句条件结束
+      "IfStatementOpeningBrace" : 1,          if语句开始大括号
+      "IfStatementClosingBrace" : 1,          if语句结束大括号
+      "ModuleSpecifierClosingBrace": 1,       模块指示结束大括号  import {xxx_} from '...'
+      "ElseStatementOpeningBrace" : 1,        else语句开始大括号前
+      "ElseStatementClosingBrace" : 1,        else语句结束大括号前
+      "ElseIfStatementOpeningBrace" : 1,      elseif语句开始大括号前
+      "ElseIfStatementClosingBrace" : 1,      elseif语句结束大括号前
+      "LineComment" : 1,                      行注释
+      "LogicalExpressionOperator" : 1,        逻辑表达式操作符前：    a_>b
+      "MemberExpressionOpening": 0,           成员表达式开始前：      a_['name']
+      "MemberExpressionClosing": 0,           成员表达式结束前：     a['name'_]
+      "MemberExpressionPeriod": 0,            成员表达式点号前:      a_.b
+      "ObjectExpressionOpeningBrace": -1,     对象表达式开始大括号前    _{a:1,b:2}
+      "ObjectExpressionClosingBrace": 0,      对象表达式结束大括号前:    {a:1,b:2_}
+      "ObjectPatternOpeningBrace": 1,         对象模式开始大括号前：
+      "ObjectPatternClosingBrace": 0,         对象模式结束大括号前：
+      "ObjectPatternComma": 0,                对象模式逗号前：
+      "Property" : 1,                         属性前：
+      "PropertyValue" : 1,                    属性值前
+      "ParameterComma" : 0,                   实参逗号前：
+      "ParameterList" : 0,                    实参列表前
+      "SwitchDiscriminantOpening" : 1,        switch判别开始：
+      "SwitchDiscriminantClosing" : 0,        switch判别结束
+      "SwitchCaseColon": 0,                   switch case冒号前
+      "ThrowKeyword": 1,                      关键字throw前
+      "TryKeyword": -1,                       关键字try前
+      "TryOpeningBrace" : 1,                  try开始大括号前
+      "TryClosingBrace" : 1,                  try结束大括号前
+      "UnaryExpressionOperator": 0,           一元表达式操作符前
+      "VariableName" : 1,                     变量名前
+      "VariableValue" : 1,                    变量值前
+      "VariableDeclarationSemiColon" : 0,     变量声明分号前：
+      "WhileStatementConditionalOpening" : 1, while语句条件开始前：    while_(
+      "WhileStatementConditionalClosing" : 0, while语句条件结束前：    while(..._)
+      "WhileStatementOpeningBrace" : 1,       while语句开始大括号前：
+      "WhileStatementClosingBrace" : 1        while语句结束大括号前：
     },
 
     "after" : {
